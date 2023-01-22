@@ -1,18 +1,48 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class DragDrop : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private float startPosX;
+    private float startPosY;
+    private bool isHeld = false;
+    private bool dragged = false;
 
-    // Update is called once per frame
     void Update()
     {
-        
+        Vector2 mousePos;
+        mousePos = Input.mousePosition;
+        mousePos = Camera.main.ScreenToWorldPoint(mousePos);
+
+        if (isHeld == true && dragged == false)
+        {
+            this.gameObject.transform.localPosition = new Vector2(mousePos.x, mousePos.y);
+        }
     }
+
+    private void OnMouseDown()
+    {
+        if (Input.GetMouseButtonDown(0)) //linker Mausbutton
+        {
+           
+            isHeld = true;
+        }
+    }
+    private void OnMouseUp()
+    {
+        isHeld = false;
+        dragged = true;
+    }
+
+
+
+
+
+
+
+
+
+
 }
