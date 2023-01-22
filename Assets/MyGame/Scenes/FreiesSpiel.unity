@@ -372,6 +372,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1054716292 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4150303145499913138, guid: b68ea1a1e8cd644b6b7b3269d85080d3, type: 3}
+  m_PrefabInstance: {fileID: 4150303144656034358}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1246433707
 GameObject:
   m_ObjectHideFlags: 0
@@ -382,6 +387,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1246433709}
   - component: {fileID: 1246433708}
+  - component: {fileID: 1246433710}
+  - component: {fileID: 1246433711}
   m_Layer: 0
   m_Name: TriggerMund
   m_TagString: Untagged
@@ -423,12 +430,48 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1246433707}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.7, y: 0.1, z: -0.5647793}
+  m_LocalPosition: {x: -4.76, y: 0.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1246433710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1246433707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97b8eb1263a9b4b348fb1cc3b777941f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bear: {fileID: 1054716292}
+  bearHighlightSrite: {fileID: 21300000, guid: ffb9fd6a97f1c4dd7851711bc6ba0591, type: 3}
+  bearSprite: {fileID: 21300000, guid: e4fe4af315bc04de39bd352cbfb0d5e4, type: 3}
+--- !u!50 &1246433711
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1246433707}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 0.0001
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &1300917037
 GameObject:
   m_ObjectHideFlags: 0
@@ -910,6 +953,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bear
       objectReference: {fileID: 0}
+    - target: {fileID: 4150303145499913139, guid: b68ea1a1e8cd644b6b7b3269d85080d3, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b68ea1a1e8cd644b6b7b3269d85080d3, type: 3}
 --- !u!1001 &5748007741780394119
@@ -1033,6 +1080,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 404346051436656613, guid: 24058c320b37349d5b1be5051913f743, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6967725643156807188, guid: 24058c320b37349d5b1be5051913f743, type: 3}
       propertyPath: m_Name
       value: Blueberry

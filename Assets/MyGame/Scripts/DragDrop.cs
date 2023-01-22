@@ -5,8 +5,7 @@ using UnityEngine.EventSystems;
 
 public class DragDrop : MonoBehaviour
 {
-    private float startPosX;
-    private float startPosY;
+    
     private bool isHeld = false;
     private bool dragged = false;
 
@@ -32,12 +31,16 @@ public class DragDrop : MonoBehaviour
     }
     private void OnMouseUp()
     {
+       
+        if(Eating.correctArea == true) //wenn beim Mund zertört es sich selbts 
+        {
+            Destroy(this.gameObject);
+            Eating.correctArea =false;
+        }
         isHeld = false;
         dragged = true;
     }
-
-
-
+  
 
 
 
