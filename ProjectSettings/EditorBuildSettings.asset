@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/MyGame/Scenes/StartScene.unity
+    guid: 4369a806e53b14ef6a77f7025dae0acf
+  - enabled: 1
+    path: Assets/MyGame/Scenes/FreiesSpiel.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/MyGame/Scenes/Benennen.unity
+    guid: 2af42d56c01f64acd91fca224270be28
+  - enabled: 1
+    path: Assets/MyGame/Scenes/Wuerfeln.unity
+    guid: 2367d9fd10c344458b84320e8367bdce
   m_configObjects: {}
