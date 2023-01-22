@@ -36,6 +36,7 @@ public class DragDrop : MonoBehaviour
         {
             Destroy(this.gameObject);
             Eating.correctArea =false;
+            Eating.count++;
         }
         isHeld = false;
         dragged = true;
