@@ -8,6 +8,7 @@ public class Eating : MonoBehaviour
     public TextMeshProUGUI score;
     public static bool correctArea = false;
     public static int count = 0;
+   
 
     public GameObject[] nahrung;
     public GameObject bear;
