@@ -21,14 +21,5 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("Benennen");
     }
 
-    void Start()
-    {
-        
-    }
-
-    
-    void Update()
-    {
-        
-    }
+  
 }

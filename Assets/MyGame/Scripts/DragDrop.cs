@@ -40,6 +40,7 @@ public class DragDrop : MonoBehaviour
         }
         isHeld = false;
         dragged = true;
+        this.gameObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0.5f); ;
     }
   
 

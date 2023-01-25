@@ -17,10 +17,19 @@ public class Eating : MonoBehaviour
     private void Start()
     {
         count = 0;
+        bear.gameObject.GetComponent<SpriteRenderer>().sprite = bearSprite;
+    }
+    private void Update()
+    { 
+
+        string _x = count.ToString();
+        string _laenge = nahrung.Length.ToString();
+        score.text = _x + "/" + _laenge;
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
+
         bear.gameObject.GetComponent<SpriteRenderer>().sprite = bearHighlightSrite;
         correctArea = true;
       
@@ -32,11 +41,5 @@ public class Eating : MonoBehaviour
         correctArea = false;
 
     }
-    private void Update()
-    {
-        Debug.Log("count:"+count +"länge"+ nahrung.Length);
-        string _x = count.ToString();
-        string _laenge = nahrung.Length.ToString();
-        score.text = _x + "/" + _laenge;
-    }
+   
 }
