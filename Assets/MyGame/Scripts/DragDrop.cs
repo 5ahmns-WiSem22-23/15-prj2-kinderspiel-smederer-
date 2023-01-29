@@ -1,7 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
-using UnityEngine.EventSystems;
+
 
 public class DragDrop : MonoBehaviour
 {
@@ -16,10 +15,12 @@ public class DragDrop : MonoBehaviour
         mousePos = Input.mousePosition;
         mousePos = Camera.main.ScreenToWorldPoint(mousePos);
 
-        if (isHeld == true && dragged == false)
+        if (isHeld == true && (dragged == false || this.gameObject.tag == "dragAlways"))
         {
             this.gameObject.transform.localPosition = new Vector2(mousePos.x, mousePos.y);
         }
+       
+    
     }
 
     private void OnMouseDown()
@@ -37,11 +38,32 @@ public class DragDrop : MonoBehaviour
         {
             Destroy(this.gameObject);
             Eating.correctArea =false;
-            Eating.count++;
+            Score.count++;
+            //
+            //
+            //
+            if (this.gameObject.tag == "dragAlways")                    // dieses if statement nur für "bennenen"-scene 
+            {
+                
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                
+               
+            }
+            //
+            //
+            //
         }
         isHeld = false;
         dragged = true;
-        this.gameObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0.5f); ;
+        Score.totalTrys++;
+      
+        
+        if(this.gameObject.tag != "dragAlways")
+        {
+            this.gameObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0.5f);
+            this.gameObject.GetComponent<CircleCollider2D>().enabled = false;
+        }
+        
     }
   
 

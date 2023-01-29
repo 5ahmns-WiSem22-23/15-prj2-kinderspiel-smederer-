@@ -6,7 +6,7 @@ public class DiceManager : MonoBehaviour
 {
     public Sprite[] diceFaces;
     public GameObject dice;
-    //public GameObject[] additionalFruits;
+    public Score addToScore;
     public List<GameObject> additionalFruits;
 
     private string result;
@@ -30,6 +30,8 @@ public class DiceManager : MonoBehaviour
             int _index02 = Random.Range(0, additionalFruits.Count);
             additionalFruits[_index02].SetActive(true);
             additionalFruits.Remove(additionalFruits[_index02]);
+
+            addToScore.maxCount++;
             
         }
 
