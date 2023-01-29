@@ -1,7 +1,7 @@
 # 15-prj2-kinderspiel-smederer
-##Entwicklungsplattform:
+##Entwicklungsplattform:##
 -macOS Monterey 12.6, Unity 2020.3.18f1, Visual Studio 2019
-##Disclaimer:
+##Disclaimer:##
 Beim spielen ist die Anwesenheit der Eltern welche für die Einhaltung und Erklärung der unten erklärten Regeln zuständig sind.
 ##Beschreibung:
 -Kinderspiel für Kinder von 2 - 5 Jahren.
