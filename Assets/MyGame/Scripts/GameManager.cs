@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour
     }
     public void LieblingsEssen()
     {
-        SceneManager.LoadScene("LieblingsEssen");
+        SceneManager.LoadScene("LieblingsEssem");
         Score.totalTrys = 0;
         Score.count = 0;
     }
