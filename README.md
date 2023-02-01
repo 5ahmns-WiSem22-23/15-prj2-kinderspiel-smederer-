@@ -1,9 +1,16 @@
 # 15-prj2-kinderspiel-smederer
 
-## Entwicklungsplattform:
+### Entwicklungsplattform:
 
 -macOS Monterey 12.6, Unity 2020.3.18f1, Visual Studio 2019
-## Disclaimer:
+
+### Target-plattform:
+WebGL
+
+### Project state: 
+Finished
+
+### Disclaimer:
 
 Beim spielen ist die Anwesenheit der Eltern welche für die Einhaltung und Erklärung der unten erklärten Regeln zuständig sind.
 
@@ -39,4 +46,5 @@ Der/Die Älteste MitspielerIn darf anfangen und denkt an ihr/sein Lieblingsessen
 
 
 
-## WebGL: https://5ahmns-wisem22-23.github.io/15-prj2-kinderspiel-smederer-/
+## WebGL:
+https://5ahmns-wisem22-23.github.io/15-prj2-kinderspiel-smederer-/
